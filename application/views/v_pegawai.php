@@ -22,36 +22,52 @@
 
       <?= $this->session->flashdata('message'); ?>
       <a class="btn btn-primary" href="<?php echo base_url('c_admin/tambah_peg');?>"><i class="fas fa-plus"></i> Tambah Data Pegawai</a>
-      <table  class="table table-striped table-bordered table-sm">
-        <tr>
-          <th>No.</th>
-          <th>Nik</th>
-          <th>Nama</th>
-          <th>E-mail</th>
-          <th>Jenis Kelamin</th>
-          <th>Agama</th>
-          <th>Tanggal Lahir</th>
-          <th>Role/Level</th>
-          <th colspan="2">Option</th>
-        </tr>
-        <?php
-          $no = 1;
-          foreach ($pegawai as $peg) :
-        ?>
-        <tr>
-          <td><?php echo $no++;?></td>
-          <td><?php echo $peg->nik;?></td>
-          <td><?php echo $peg->name;?></td>
-          <td><?php echo $peg->email;?></td>
-          <td><?php echo $peg->jk;?></td>
-          <td><?php echo $peg->agama;?></td>
-          <td><?php echo $peg->tgl_lahir;?></td>
-          <td><?php echo $peg->role;?></td>
-          <td><?php echo anchor('c_admin/edit_peg/'.$peg->id_pegawai,('<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>'));?></td>
-          <td><div onclick="javascript: return confirm('Anda yakin ingin menghapus data ini ?')"><?php echo anchor('c_admin/hapus_peg/'.$peg->email,('<div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>'));?></div></td>
-        </tr>
-        <?php endforeach; ?>
-      </table>
+      <div class="card">
+            <div class="card-header">
+              
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <table id="example1" class="table table-striped table-bordered table-sm">
+                <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Nik</th>
+                  <th>Nama</th>
+                  <th>E-mail</th>
+                  <th>Jenis Kelamin</th>
+                  <th>Agama</th>
+                  <th>Tanggal Lahir</th>
+                  <th>Role/Level</th>
+                  <th colspan="2">Option</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php
+                  $no = 1;
+                  foreach ($pegawai as $peg) :
+                ?>
+                <tr>
+                  <td><?php echo $no++;?></td>
+                  <td><?php echo $peg->nik;?></td>
+                  <td><?php echo $peg->name;?></td>
+                  <td><?php echo $peg->email;?></td>
+                  <td><?php echo $peg->jk;?></td>
+                  <td><?php echo $peg->agama;?></td>
+                  <td><?php echo $peg->tgl_lahir;?></td>
+                  <td><?php echo $peg->role;?></td>
+                  <td><?php echo anchor('c_admin/edit_peg/'.$peg->id_pegawai,('<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>'));?></td>
+                  <td><div onclick="javascript: return confirm('Anda yakin ingin menghapus data ini ?')"><?php echo anchor('c_admin/hapus_peg/'.$peg->email,('<div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>'));?></div></td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+                <tfoot>
+                </tfoot>
+              </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
     </section>
 
     <!-- Modal -->
