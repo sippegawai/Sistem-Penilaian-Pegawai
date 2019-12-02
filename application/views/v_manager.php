@@ -20,37 +20,54 @@
     <!-- /.content-header -->
     <section class="content">
       <a class="btn btn-primary" href="<?php echo base_url('c_admin/tambah_man');?>"><i class="fas fa-plus"></i> Tambah Data Manager</a>
-      <table class="table">
-        <tr>
-          <th>No.</th>
-          <th>Nik</th>
-          <th>Nama</th>
-          <th>E-mail</th>
-          <th>Jenis Kelamin</th>
-          <th>Agama</th>
-          <th>Tanggal Lahir</th>
-          <th>Role/Level</th>
-          <th colspan="2">Option</th>
-        </tr>
-        <?php
-          $no = 1;
-          foreach ($manager as $man) :
-        ?>
-        <tr>
-          <td><?php echo $no++;?></td>
-          <td><?php echo $man->nik;?></td>
-          <td><?php echo $man->name;?></td>
-          <td><?php echo $man->email;?></td>
-          <td><?php echo $man->jk;?></td>
-          <td><?php echo $man->agama;?></td>
-          <td><?php echo $man->tgl_lahir;?></td>
-          <td><?php echo $man->role;?></td>
-          <td><?php echo anchor('c_admin/edit_man/'.$man->id_manager,('<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>'));?></td>
-          <td><div onclick="javascript: return confirm('Anda yakin ingin menghapus data ini ?')"><?php echo anchor('c_admin/hapus_man/'.$man->email,('<div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>'));?></div></td>
-        </tr>
+      <div class="card">
+            <div class="card-header">
+              
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+            <table id="example1" class="table table-striped table-bordered table-sm">
+              <thead>
+              <tr>
+                <th>No.</th>
+                <th>Nik</th>
+                <th>Nama</th>
+                <th>E-mail</th>
+                <th>Jenis Kelamin</th>
+                <th>Agama</th>
+                <th>Tanggal Lahir</th>
+                <th>Role/Level</th>
+                <th colspan="2">Option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+                $no = 1;
+                foreach ($manager as $man) :
+              ?>
+              <tr>
+                <td><?php echo $no++;?></td>
+                <td><?php echo $man->nik;?></td>
+                <td><?php echo $man->name;?></td>
+                <td><?php echo $man->email;?></td>
+                <td><?php echo $man->jk;?></td>
+                <td><?php echo $man->agama;?></td>
+                <td><?php echo $man->tgl_lahir;?></td>
+                <td><?php echo $man->role;?></td>
+                <td><?php echo anchor('c_admin/edit_man/'.$man->id_manager,('<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>'));?></td>
+                <td><div onclick="javascript: return confirm('Anda yakin ingin menghapus data ini ?')"><?php echo anchor('c_admin/hapus_man/'.$man->email,('<div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>'));?></div></td>
+              </tr>
 
-        <?php endforeach; ?>
-      </table>
+              <?php endforeach; ?>
+            </tbody>
+            <tfoot>
+            </tfoot>
+            </table>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+          
     </section>
 
     <!-- Modal -->
