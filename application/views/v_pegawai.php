@@ -24,7 +24,7 @@
       <a class="btn btn-primary" href="<?php echo base_url('c_admin/tambah_peg');?>"><i class="fas fa-plus"></i> Tambah Data Pegawai</a>
       <div class="card">
             <div class="card-header">
-              
+
             </div>
             <!-- /.card-header -->
             <div class="card-body">

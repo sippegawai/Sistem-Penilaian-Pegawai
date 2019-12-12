@@ -3,7 +3,7 @@
 
 class M_admin extends CI_Model
 {
-	
+
 	public function tampil_data_man()
 	{
 		return $this->db->get('manager');
@@ -13,7 +13,12 @@ class M_admin extends CI_Model
 	{
 		return $this->db->get('pegawai');
 	}
-	
+
+	public function tampil_data_ag()
+	{
+		return $this->db->get('agama');
+	}
+
 	public function hapus_data($where,$table)
 	{
 		$this->db->where($where);

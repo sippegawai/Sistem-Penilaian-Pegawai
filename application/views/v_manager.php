@@ -22,7 +22,7 @@
       <a class="btn btn-primary" href="<?php echo base_url('c_admin/tambah_man');?>"><i class="fas fa-plus"></i> Tambah Data Manager</a>
       <div class="card">
             <div class="card-header">
-              
+
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -67,7 +67,7 @@
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
-          
+
     </section>
 
     <!-- Modal -->

@@ -1,8 +1,8 @@
 <div class="content-wrapper">
-	
+
 	<section class="content">
 		<?php foreach ($pegawai as $peg ) {?>
-			<form action="<?php echo base_url('admin/update_peg'); ?>" method="post">
+			<form action="<?php echo base_url('c_admin/update_peg'); ?>" method="post">
 
 	              <div class="form-group">
 	                <label>Nik</label>

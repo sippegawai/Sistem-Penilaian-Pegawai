@@ -1,8 +1,8 @@
 <div class="content-wrapper">
-	
+
 	<section class="content">
 		<?php foreach ($manager as $man ) {?>
-			<form action="<?php echo base_url('admin/update_man'); ?>" method="post">
+			<form action="<?php echo base_url('c_admin/update_man'); ?>" method="post">
 
 	              <div class="form-group">
 	                <label>Nik</label>
