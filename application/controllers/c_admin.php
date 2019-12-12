@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class C_admin extends CI_Controller
 {
-	
+
 	public function __construct()
 	{
 		parent::__construct();
@@ -161,6 +161,8 @@ class C_admin extends CI_Controller
 
 	public function update_man()
 	{
+		$data['agama'] = $this->m_admin->tampil_data_ag()->result();
+
 		$id = $this->input->post('id_manager');
 		$nik = $this->input->post('nik');
 		$name = $this->input->post('name');
@@ -187,6 +189,7 @@ class C_admin extends CI_Controller
 	{
 		$where = array('id_pegawai' => $id );
 		$data['pegawai'] = $this->m_admin->edit_data($where,'pegawai')->result();
+		$data['agama'] = $this->m_admin->tampil_data_ag()->result();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
 		$this->load->view('edit_p', $data);
@@ -213,7 +216,7 @@ class C_admin extends CI_Controller
 		);
 
 		$where = array('id_pegawai' => $id);
-		$this->m_pegawai->update_data($where,$data,'pegawai');
+		$this->m_admin->update_data($where,$data,'pegawai');
 		redirect('c_admin/index_pegawai');
 	}
 
