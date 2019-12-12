@@ -2,11 +2,11 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 /**
- * 
+ *
  */
 class User_peg extends CI_Controller
 {
-	
+
 	public function __construct()
 	{
 		parent::__construct();
@@ -21,7 +21,7 @@ class User_peg extends CI_Controller
 		$data['pegawai'] = $this->m_user_p->tampil_data()->result();
 		$data['buruh'] = $this->m_user_p->tampil_data_b()->result();
 		$this->load->view('layout/header_user');
-		$this->load->view('user_p', $data);
+		$this->load->view('pegawai/user_p', $data);
 		$this->load->view('layout/footer_user');
 	}
 

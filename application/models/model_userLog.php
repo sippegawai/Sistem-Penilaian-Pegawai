@@ -13,20 +13,20 @@ class model_userLog extends CI_Model{
 					'role_id' => $row->role_id,
 					'login' => 1);
 			}
-		$this->session->set_userdata($sar);
-		$role_id=$this->session->userdata('role_id');
-		if ($role_id == '1') {
-			redirect('c_admin');
+			$this->session->set_userdata($sar);
+			$role_id=$this->session->userdata('role_id');
+			if ($role_id == '1') {
+				redirect('c_admin');
+			}
+			elseif ($role_id == '2')  {
+				redirect('user_man');
+			}elseif ($role_id == '3') {
+				redirect('user_peg');
+			}
 		}
-		elseif ($role_id == '2')  {
-			redirect('user_man');
-		}elseif ($role_id == '3') {
-			redirect('user_peg');
+		else{
+			redirect('auth');
 		}
-	}
-	else{
-		redirect('auth');
-	}
 }
 }
 ?>

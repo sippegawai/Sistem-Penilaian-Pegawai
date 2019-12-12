@@ -21,7 +21,7 @@ class C_admin extends CI_Controller
 	{
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('v_admin');
+		$this->load->view('admin/v_admin');
 		$this->load->view('layout/footer');
 	}
 
@@ -30,7 +30,7 @@ class C_admin extends CI_Controller
 		$data['manager'] = $this->m_admin->tampil_data_man()->result();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('v_manager', $data);
+		$this->load->view('admin/v_manager', $data);
 		$this->load->view('layout/footer');
 	}
 
@@ -39,21 +39,21 @@ class C_admin extends CI_Controller
 		$data['pegawai'] = $this->m_admin->tampil_data_peg()->result();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('v_pegawai', $data);
+		$this->load->view('admin/v_pegawai', $data);
 		$this->load->view('layout/footer');
 	}
 
 	public function tambah_man(){
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('tambah_man');
+		$this->load->view('admin/tambah_man');
 		$this->load->view('layout/footer');
 	}
 
 	public function tambah_peg(){
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('tambah_peg');
+		$this->load->view('admin/tambah_peg');
 		$this->load->view('layout/footer');
 	}
 
@@ -72,7 +72,7 @@ class C_admin extends CI_Controller
 	  	if( $this->form_validation->run() == false) {
 			$this->load->view('layout/header');
 			$this->load->view('layout/sidebar');
-			$this->load->view('tambah_man');
+			$this->load->view('admin/tambah_man');
 			$this->load->view('layout/footer');
 	  	} else {
 	  		$data = [
@@ -155,7 +155,7 @@ class C_admin extends CI_Controller
 		$data['manager'] = $this->m_admin->edit_data($where,'manager')->result();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('edit_m', $data);
+		$this->load->view('admin/edit_m', $data);
 		$this->load->view('layout/footer');
 	}
 
@@ -192,7 +192,7 @@ class C_admin extends CI_Controller
 		$data['agama'] = $this->m_admin->tampil_data_ag()->result();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
-		$this->load->view('edit_p', $data);
+		$this->load->view('admin/edit_p', $data);
 		$this->load->view('layout/footer');
 	}
 

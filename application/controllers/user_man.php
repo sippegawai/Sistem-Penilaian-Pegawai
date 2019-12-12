@@ -21,7 +21,7 @@ class User_man extends CI_Controller
 		$data['pegawai'] = $this->m_user_m->tampil_data_p()->result();
 		$data['manager'] = $this->m_user_m->tampil_data_m()->result();
 		$this->load->view('layout/header_user');
-		$this->load->view('user_m', $data);
+		$this->load->view('manager/user_m', $data);
 		$this->load->view('layout/footer_user');
 	}
 
@@ -72,7 +72,7 @@ class User_man extends CI_Controller
 		$where = array('id_manager' => $id );
 		$data['manager'] = $this->m_user_m->edit_data($where,'manager')->result();
 		$this->load->view('layout/header_user');
-		$this->load->view('edit_user_m', $data);
+		$this->load->view('manager/edit_user_m', $data);
 		$this->load->view('layout/footer_user');
 	}
 
