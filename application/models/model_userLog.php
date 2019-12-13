@@ -13,15 +13,36 @@ class model_userLog extends CI_Model{
 					'role_id' => $row->role_id,
 					'login' => 1);
 			}
+
 			$this->session->set_userdata($sar);
 			$role_id=$this->session->userdata('role_id');
 			if ($role_id == '1') {
 				redirect('c_admin');
 			}
 			elseif ($role_id == '2')  {
-				redirect('user_man');
+				$this->db->where('email',$email);
+				$query=$this->db->get('manager');
+				if ($query->num_rows()>0) {
+					foreach ($query->result() as $rows) {
+						$cek_id= array('id_manager' => $rows->id_manager,
+							'email' => $row->email,
+							'cek' => 1);
+					}
+				}
+				$id = $this->session->set_userdata($cek_id);
+				redirect('user_man/index'.$id);
 			}elseif ($role_id == '3') {
-				redirect('user_peg');
+				$this->db->where('email',$email);
+				$query=$this->db->get('pegawai');
+				if ($query->num_rows()>0) {
+					foreach ($query->result() as $rows) {
+						$cek_id= array('id_pegawai' => $rows->id_pegawai,
+							'email' => $row->email,
+							'cek' => 1);
+					}
+				}
+				$id = $this->session->set_userdata($cek_id);
+				redirect('user_peg'.$id);
 			}
 		}
 		else{

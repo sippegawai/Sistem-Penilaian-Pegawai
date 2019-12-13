@@ -635,52 +635,49 @@
 
 
 
-    <section class="site-section" id="blog-section">
+    <section class="site-section" id="blog-section" >
       <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-1 mt-3">
           <div class="col-12 text-center" data-aos="fade">
             <h2 class="section-title mb-3">Your Profil</h2>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6 mb-4" data-aos="" data-aos-delay="">
             <figure class="circle-bg">
             <img src="<?php echo base_url() ?>/assets/user/images/hero_1.jpg" alt="Image" class="img-fluid">
             </figure>
           </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5 ml-auto" data-aos=" data-aos-delay="100">
 
-            <?php foreach ($manager as $man ) {?>
             <div class="mb-4">
-              <h3 class="h3 mb-4 text-black"><td><?php echo $man->name ?></td></h3>
+              <h3 class="h3 mb-4 text-black"><?php echo $manager->name ?></h3>
             </div>
               <table class="table table-sm">
                 <tr>
                   <td><label>NIK</label></td>
-                  <td><?php echo $man->nik ?></td>
+                  <td><?php echo $manager->nik ?></td>
                 </tr>
                 <tr>
                   <td><label>E-mail</label></td>
-                  <td><?php echo $man->email ?></td>
+                  <td><?php echo $manager->email ?></td>
                 </tr>
                 <tr>
                   <td><label>Jenis Kelamin</label></td>
-                  <td><?php echo $man->jk ?></td>
+                  <td><?php echo $manager->jk ?></td>
                 </tr>
                 <tr>
                   <td><label>Agama</label></td>
-                  <td><?php echo $man->agama ?></td>
+                  <td><?php echo $manager->agama ?></td>
                 </tr>
                 <tr>
                   <td><label>Tanggal Lahir</label></td>
-                  <td><?php echo $man->tgl_lahir ?></td>
+                  <td><?php echo $manager->tgl_lahir ?></td>
                 </tr>
               </table>
 
-            <p><?php echo anchor('user_man/edit/'.$man->email,('<div class="smoothscroll btn btn-outline-primary"><i class="fas fa-edit fa-sm"> Edit Profil</i></div>'));?></p>
-            <?php }?>
-
+            <p><?php echo anchor('user_man/edit/'.$manager->id_manager,('<div class="smoothscroll btn btn-outline-primary"><i class="fas fa-edit fa-sm"> Edit Profil</i></div>'));?></p>
 
           </div>
         </div>

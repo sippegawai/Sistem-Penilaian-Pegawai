@@ -3,12 +3,12 @@
 
 class M_user_p extends CI_Model
 {
-	
-	public function tampil_data()
+
+	public function tampil_data($id)
 	{
-		return $this->db->get('pegawai');
+		return $this->db->get_where('pegawai',$id);
 	}
-	
+
 	public function tampil_data_b()
 	{
 		return $this->db->get('buruh');

@@ -18,8 +18,10 @@ class User_man extends CI_Controller
 	}
 	public function index()
 	{
+		$idm = $this->session->userdata('id_manager');
+		#$cek['manager'] = $this->m_user_m->cek_data_m($email);
 		$data['pegawai'] = $this->m_user_m->tampil_data_p()->result();
-		$data['manager'] = $this->m_user_m->tampil_data_m()->result();
+		$data['manager'] = $this->m_user_m->tampil_data_m(['id_manager' => $idm])->row();
 		$this->load->view('layout/header_user');
 		$this->load->view('manager/user_m', $data);
 		$this->load->view('layout/footer_user');
@@ -70,7 +72,7 @@ class User_man extends CI_Controller
 	public function edit($id)
 	{
 		$where = array('id_manager' => $id );
-		$data['manager'] = $this->m_user_m->edit_data($where,'manager')->result();
+		$data['manager'] = $this->m_user_m->edit_data($where)->row();
 		$this->load->view('layout/header_user');
 		$this->load->view('manager/edit_user_m', $data);
 		$this->load->view('layout/footer_user');

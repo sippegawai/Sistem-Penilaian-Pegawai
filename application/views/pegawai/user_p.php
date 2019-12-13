@@ -1,19 +1,19 @@
 
-     
+
     <div class="site-blocks-cover overlay" style="background-image: url(<?php echo base_url() ?>/assets/user/images/hero_1.jpg);" data-aos="fade" id="home-section">
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
-          
+
           <div class="col-md-8 mt-lg-5 text-center">
             <h1 class="text-uppercase mb-5" data-aos="fade-up">Sistem Penilaian Pegawai</h1>
-            
+
             <div data-aos="fade-up" data-aos-delay="100">
               <a href="#contact-section" class="btn smoothscroll btn-primary mr-2 mb-2">Get In Touch</a>
             </div>
           </div>
-            
+
         </div>
       </div>
 
@@ -22,9 +22,9 @@
           <span class="mouse-wheel"></span>
         </span>
       </a>
-    </div>  
+    </div>
 
-    
+
     <div class="site-section cta-big-image" id="about-section">
       <div class="container">
         <div class="row mb-5">
@@ -44,11 +44,11 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
 
 
-              
+
             </div>
-            
-            
-              
+
+
+
             <div class="mb-4">
               <ul class="list-unstyled ul-check success">
                 <li>Officia quaerat eaque neque</li>
@@ -56,19 +56,19 @@
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Consectetur adipisicing elit</li>
               </ul>
-              
+
             </div>
 
             <p><a href="#contact-section" class="smoothscroll btn btn-primary">Get In Touch</a></p>
 
-            
-            
+
+
           </div>
         </div>
-      </div>  
+      </div>
     </div>
 
-    
+
     <section class="site-section border-bottom" id="team-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
@@ -78,7 +78,7 @@
           </div>
         </div>
         <div class="row">
-          
+
 
           <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
             <div class="team-member">
@@ -225,13 +225,13 @@
           </div>
 
 
-          
+
         </div>
       </div>
     </section>
 
     <section class="site-section" id="portfolio-section">
-      
+
 
       <div class="container">
 
@@ -248,8 +248,8 @@
             <button class="btn btn-primary" data-filter=".design">Design</button>
             <button class="btn btn-primary" data-filter=".brand">Brand</button>
           </div>
-        </div>  
-        
+        </div>
+
         <div id="posts" class="row no-gutter">
           <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
             <a href="images/img_1.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
@@ -349,8 +349,8 @@
     </section>
 
 
-  
-    
+
+
 
     <section class="site-section border-bottom bg-light" id="services-section">
       <div class="container">
@@ -435,7 +435,7 @@
           </div>
         </div>
       </div>
-      <div class="container"> 
+      <div class="container">
             <button class="btn btn-primary" data-toggle="modal" data-target="#tambah_pegawai"><i class="fas fa-plus"></i> Tambah Data Buruh</button>
             <table  class="table table-striped table-bordered table-sm">
               <tr>
@@ -474,7 +474,7 @@
                 <span><span>$47</span> / year</span>
               </div>
               <ul class="list-unstyled ul-check success mb-5">
-                
+
                 <li>Officia quaerat eaque neque</li>
                 <li>Possimus aut consequuntur incidunt</li>
                 <li class="remove">Lorem ipsum dolor sit amet</li>
@@ -494,7 +494,7 @@
                 <span><span>$200</span> / year</span>
               </div>
               <ul class="list-unstyled ul-check success mb-5">
-                
+
                 <li>Officia quaerat eaque neque</li>
                 <li>Possimus aut consequuntur incidunt</li>
                 <li>Lorem ipsum dolor sit amet</li>
@@ -514,7 +514,7 @@
                 <span><span>$750</span> / year</span>
               </div>
               <ul class="list-unstyled ul-check success mb-5">
-                
+
                 <li>Officia quaerat eaque neque</li>
                 <li>Possimus aut consequuntur incidunt</li>
                 <li>Lorem ipsum dolor sit amet</li>
@@ -527,7 +527,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="row site-section" id="faq-section">
           <div class="col-12 text-center" data-aos="fade">
             <h2 class="section-title">Frequently Ask Questions</h2>
@@ -535,12 +535,12 @@
         </div>
         <div class="row">
           <div class="col-lg-6">
-            
+
             <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
             <h3 class="text-black h5 mb-4">Can I accept both Paypal and Stripe?</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
             </div>
-            
+
             <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 class="text-black h5 mb-4">What available is refund period?</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
@@ -550,7 +550,7 @@
             <h3 class="text-black h5 mb-4">Can I accept both Paypal and Stripe?</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
             </div>
-            
+
             <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 class="text-black h5 mb-4">What available is refund period?</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
@@ -562,7 +562,7 @@
               <h3 class="text-black h5 mb-4">Where are you from?</h3>
               <p>Voluptatum nobis obcaecati perferendis dolor totam unde dolores quod maxime corporis officia et. Distinctio assumenda minima maiores.</p>
             </div>
-            
+
             <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 class="text-black h5 mb-4">What is your opening time?</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
@@ -572,7 +572,7 @@
             <h3 class="text-black h5 mb-4">Can I accept both Paypal and Stripe?</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
             </div>
-            
+
             <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 class="text-black h5 mb-4">What available is refund period?</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
@@ -585,7 +585,7 @@
     <section class="site-section" id="about-section">
       <div class="container">
         <div class="row mb-5">
-          
+
           <div class="col-lg-6 ml-auto mb-5 order-1 order-lg-2" data-aos="fade" data-aos="fade-up" data-aos-delay="">
             <img src="<?php echo base_url() ?>/assets/user/images/hero_1.jpg" alt="Image" class="img-fluid rounded">
           </div>
@@ -593,8 +593,8 @@
 
             <div class="row">
 
-              
-              
+
+
               <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="">
                 <div class="unit-4">
                   <div class="unit-4-icon mr-4 mb-3"><span class="text-primary flaticon-head"></span></div>
@@ -617,67 +617,65 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
-  
-    
-    
+
+
+
 
     <section class="site-section" id="blog-section">
       <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-1 mt-3">
           <div class="col-12 text-center" data-aos="fade">
             <h2 class="section-title mb-3">Your Profil</h2>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6 mb-5"  data-aos-delay="">
             <figure class="circle-bg">
             <img src="<?php echo base_url() ?>/assets/user/images/hero_1.jpg" alt="Image" class="img-fluid">
             </figure>
           </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-             
-            <?php foreach ($pegawai as $peg ) {?>
+          <div class="col-lg-5 ml-auto" data-aos="" data-aos-delay="100">
+
+
             <div class="mb-4">
-              <h3 class="h3 mb-4 text-black"><td><?php echo $peg->name ?></td></h3>            
+              <h3 class="h3 mb-4 text-black"><td><?php echo $pegawai->name ?></td></h3>
             </div>
               <table class="table table-sm">
                 <tr>
                   <td><label>NIK</label></td>
-                  <td><?php echo $peg->nik ?></td>
+                  <td><?php echo $pegawai->nik ?></td>
                 </tr>
                 <tr>
                   <td><label>E-mail</label></td>
-                  <td><?php echo $peg->email ?></td>
+                  <td><?php echo $pegawai->email ?></td>
                 </tr>
                 <tr>
                   <td><label>Jenis Kelamin</label></td>
-                  <td><?php echo $peg->jk ?></td>
+                  <td><?php echo $pegawai->jk ?></td>
                 </tr>
                 <tr>
                   <td><label>Agama</label></td>
-                  <td><?php echo $peg->agama ?></td>
+                  <td><?php echo $pegawai->agama ?></td>
                 </tr>
                 <tr>
                   <td><label>Tanggal Lahir</label></td>
-                  <td><?php echo $peg->tgl_lahir ?></td>
+                  <td><?php echo $pegawai->tgl_lahir ?></td>
                 </tr>
               </table>
 
-            <p><?php echo anchor('user_peg/edit/'.$peg->id_pegawai,('<div class="smoothscroll btn btn-outline-primary"><i class="fas fa-edit fa-sm"> Edit Profil</i></div>'));?></p>
-            <?php }?>
-            
-            
+            <p><?php echo anchor('user_peg/edit/'.$pegawai->id_pegawai,('<div class="smoothscroll btn btn-outline-primary"><i class="fas fa-edit fa-sm"> Edit Profil</i></div>'));?></p>
+
           </div>
         </div>
       </div>
     </section>
 
-   
+
 
 
     <section class="site-section bg-light" id="contact-section" data-aos="fade">
@@ -688,7 +686,7 @@
           </div>
         </div>
         <div class="row mb-5">
-          
+
 
 
           <div class="col-md-4 text-center">
@@ -713,11 +711,11 @@
         <div class="row">
           <div class="col-md-12 mb-5">
 
-            
+
 
             <form action="#" class="p-5 bg-white">
-              
-              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+
+              <h2 class="h4 text-black mb-5">Contact Form</h2>
 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
@@ -731,24 +729,24 @@
               </div>
 
               <div class="row form-group">
-                
+
                 <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
+                  <label class="text-black" for="email">Email</label>
                   <input type="email" id="email" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
-                
+
                 <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
+                  <label class="text-black" for="subject">Subject</label>
                   <input type="subject" id="subject" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
+                  <label class="text-black" for="message">Message</label>
                   <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
                 </div>
               </div>
@@ -759,10 +757,10 @@
                 </div>
               </div>
 
-  
+
             </form>
           </div>
-          
+
         </div>
       </div>
     </section>

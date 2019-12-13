@@ -18,7 +18,8 @@ class User_peg extends CI_Controller
 	}
 	public function index()
 	{
-		$data['pegawai'] = $this->m_user_p->tampil_data()->result();
+		$idm = $this->session->userdata('id_pegawai');
+		$data['pegawai'] = $this->m_user_p->tampil_data(['id_pegawai' => $idm])->row();
 		$data['buruh'] = $this->m_user_p->tampil_data_b()->result();
 		$this->load->view('layout/header_user');
 		$this->load->view('pegawai/user_p', $data);
@@ -49,9 +50,9 @@ class User_peg extends CI_Controller
 	public function edit($id)
 	{
 		$where = array('id_pegawai' => $id );
-		$data['pegawai'] = $this->m_user_p->edit_data($where,'pegawai')->result();
+		$data['pegawai'] = $this->m_user_p->edit_data($where,'pegawai')->row();
 		$this->load->view('layout/header_user');
-		$this->load->view('edit_user_p', $data);
+		$this->load->view('pegawai/edit_user_p', $data);
 		$this->load->view('layout/footer_user');
 	}
 
