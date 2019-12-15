@@ -21,12 +21,23 @@
 
 	              <div class="form-group">
 	                <label>Jenis Kelamin</label>
-	                <input type="text" id="jk"  name="jk" class="form-control" placeholder="Jenis Kelamin" value="<?php echo $peg->jk ?>">
+	                <select id="jk"  name="jk" class="form-control">
+	                	<option value="" selected>-- Pilih Jenis Kelamin --</option>
+	                	<option value="Laki Laki">Laki Laki</option>
+	                	<option value="Perempuan">Perempuan</option>
+	                </select> 
 	              </div>
 
 	              <div class="form-group">
 	                <label>agama</label>
-	                <input type="text" id="agama"  name="agama" class="form-control" placeholder="Agama" value="<?php echo $peg->agama ?>">
+	                <select id="agama"  name="agama" class="form-control">
+	                	<option value="" selected>-- Pilih agama --</option>
+	                	<option value="Islam">Islam</option>
+	                	<option value="Kristen">Kristen</option>
+	                	<option value="Budha">Budha</option>
+	                	<option value="Hindu">Hindu</option>
+	                	<option value="Katolik">Katolik</option>
+	                </select>
 	              </div>
 
 	              <div class="form-group">

@@ -213,7 +213,7 @@ class C_admin extends CI_Controller
 		);
 
 		$where = array('id_pegawai' => $id);
-		$this->m_pegawai->update_data($where,$data,'pegawai');
+		$this->m_admin->update_data($where,$data,'pegawai');
 		redirect('c_admin/index_pegawai');
 	}
 
