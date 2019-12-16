@@ -19,14 +19,23 @@
 	                <input type="text" id="email"  name="email" class="form-control" placeholder="E-mail" value="<?php echo $man->email ?>">
 	              </div>
 
-	              <div class="form-group">
+								<div class="form-group">
 	                <label>Jenis Kelamin</label>
-	                <input type="text" id="jk"  name="jk" class="form-control" placeholder="Jenis Kelamin" value="<?php echo $man->jk ?>">
-	              </div>
+										<select name="jk" class="form-control">
+											<option value='Laki-Laki' <?php if($man->jk=="Laki-Laki" or $man->jk==""){echo "selected";} ?>>Laki-Laki</option>";
+											<option value='Perempuan' <?php if($man->jk=="Perempuan"){echo "selected";} ?>>Perempuan</option>";
+										</select>
+						              </div>
 
-	              <div class="form-group">
-	                <label>agama</label>
-	                <input type="text" id="agama"  name="agama" class="form-control" placeholder="Agama" value="<?php echo $man->agama ?>">
+						              <div class="form-group">
+						                <label>agama</label>
+										<select name="agama" class="form-control">
+										<?php
+											foreach($agama as $data){
+												echo"<option value='".$data->nama_agama."'>".$data->nama_agama."</option>";
+											}
+										?>
+										</select>
 	              </div>
 
 	              <div class="form-group">

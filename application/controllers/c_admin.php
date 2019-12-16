@@ -153,6 +153,7 @@ class C_admin extends CI_Controller
 	{
 		$where = array('id_manager' => $id );
 		$data['manager'] = $this->m_admin->edit_data($where,'manager')->result();
+		$data['agama'] = $this->m_admin->tampil_data_ag()->result();
 		$this->load->view('layout/header');
 		$this->load->view('layout/sidebar');
 		$this->load->view('admin/edit_m', $data);

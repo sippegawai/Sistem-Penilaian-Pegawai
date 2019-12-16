@@ -136,6 +136,18 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 (2, 'manager'),
 (3, 'pegawai');
 
+CREATE TABLE "AGAMA"(
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY Key,
+  'nama_agama' varchar(50) not null
+);
+
+INSERT INTO `Agama` (`nama_agama`) VALUES
+('Islam'),
+('Kristen'),
+('Buddha'),
+('Hindhu'),
+('Kong Hu Chu');
+
 --
 -- Indexes for dumped tables
 --

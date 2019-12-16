@@ -9,7 +9,7 @@
 	                <input type="hidden" name="id_pegawai" value="<?php echo $peg->id_pegawai ?>" class="form-control">
 	                <input type="text" id="nik"  name="nik" class="form-control" placeholder="Nik" value="<?php echo $peg->nik ?>">
 	              </div>
-					<div class="form-group">
+							<div class="form-group">
 	                <label>Nama</label>
 	                <input type="text" name="name" class="form-control" placeholder="Nama" value="<?php echo $peg->name ?>">
 	              </div>
@@ -21,12 +21,21 @@
 
 	              <div class="form-group">
 	                <label>Jenis Kelamin</label>
-	                <input type="text" id="jk"  name="jk" class="form-control" placeholder="Jenis Kelamin" value="<?php echo $peg->jk ?>">
+									<select name="jk" class="form-control">
+										<option value='Laki-Laki' <?php if($peg->jk=="Laki-Laki" or $peg->jk==""){echo "selected";} ?>>Laki-Laki</option>";
+										<option value='Perempuan' <?php if($peg->jk=="Perempuan"){echo "selected";} ?>>Perempuan</option>";
+									</select>
 	              </div>
 
 	              <div class="form-group">
 	                <label>agama</label>
-	                <input type="text" id="agama"  name="agama" class="form-control" placeholder="Agama" value="<?php echo $peg->agama ?>">
+									<select name="agama" class="form-control">
+									<?php
+										foreach($agama as $data){
+											echo"<option value='".$data->nama_agama."'>".$data->nama_agama."</option>";
+										}
+									?>
+									</select>
 	              </div>
 
 	              <div class="form-group">
